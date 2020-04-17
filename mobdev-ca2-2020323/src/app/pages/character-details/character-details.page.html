@@ -1,3 +1,4 @@
+
 <ion-header>
 	<ion-toolbar color="primary">
 		<ion-buttons slot="start">
@@ -15,12 +16,9 @@
 	</ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-
-	<ion-card *ngIf="character">
-		<ion-card-content>
-			{{ character.opening_crawl }}
-		</ion-card-content>
-	</ion-card>
-
+<ion-content>
+	<ion-card-content>
+		{{ character.name }}
+	</ion-card-content>
 </ion-content>
+

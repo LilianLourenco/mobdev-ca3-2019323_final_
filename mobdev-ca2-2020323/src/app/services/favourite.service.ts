@@ -3,6 +3,7 @@ import { Storage } from '@ionic/storage';
 
 const STORAGE_KEY = 'favouriteEpisodes';
 
+
 @Injectable({
     providedIn: 'root'
 })
@@ -40,7 +41,7 @@ export class FavouriteService {
             }
         });
     }
-    __
+
     getAllFavouriteCharacters() {
         return this.storage.get(STORAGE_KEY);
     }

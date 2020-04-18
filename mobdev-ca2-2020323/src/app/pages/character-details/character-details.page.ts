@@ -20,7 +20,7 @@ export class CharacterDetailsPage implements OnInit {
     this.characterId = this.activatedRoute.snapshot.paramMap.get('id');
 
     this.api.getCharacter(this.characterId).subscribe(res => {
-      this.characterId = res;
+      this.character = res[0];
     });
  
   }

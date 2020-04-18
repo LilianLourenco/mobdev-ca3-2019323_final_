@@ -16,9 +16,20 @@
 	</ion-toolbar>
 </ion-header>
 
-<ion-content>
-	<ion-card-content>
-		{{ character.name }}
-	</ion-card-content>
+<ion-content padding>
+
+	<ion-card *ngIf="character">
+		<ion-card-content>
+			<h3>Character name: {{ character.name }} </h3>
+		</ion-card-content>
+	</ion-card>
+
+	<ion-card *ngIf="character">
+		<ion-card-content>
+			<h3>Character occupation: {{ character.occupation }} </h3>
+		</ion-card-content>
+	</ion-card>
+
 </ion-content>
+
 

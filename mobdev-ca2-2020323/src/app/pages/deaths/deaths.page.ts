@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { ApiService } from '../../services/api.service';
 
+
 @Component({
     selector: 'app-deaths',
     templateUrl: './deaths.page.html',
@@ -21,4 +22,9 @@ export class DeathsPage implements OnInit {
         });
     }
 
+    openDetails(death) {
+        let deathId = death.char_id;        
+        this.router.navigateByUrl(`/tabs/death/${deathId}`);
+    }
 }
+

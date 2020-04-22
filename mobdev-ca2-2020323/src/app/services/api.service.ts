@@ -1,3 +1,4 @@
+
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
@@ -7,7 +8,8 @@ import { HttpClient } from '@angular/common/http';
 export class ApiService {
 
     constructor(private http: HttpClient) { }
-getEpisodes() {
+
+    getEpisodes() {
         return this.http.get('https://www.breakingbadapi.com/api/episodes');
     }
 
@@ -34,9 +36,8 @@ getEpisodes() {
     getDeaths() {
         return this.http.get('https://www.breakingbadapi.com/api/deaths');
     }
-
     getDeath(id) {
-        return this.http.get(`https://www.breakingbadapi.com/api/deaths/${id}`);
+        return this.http.get('https://www.breakingbadapi.com/api/deaths');
     }
 
 }

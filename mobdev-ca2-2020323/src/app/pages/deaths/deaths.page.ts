@@ -3,7 +3,6 @@ import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { ApiService } from '../../services/api.service';
 
-
 @Component({
     selector: 'app-deaths',
     templateUrl: './deaths.page.html',
@@ -11,20 +10,19 @@ import { ApiService } from '../../services/api.service';
 })
 export class DeathsPage implements OnInit {
 
-    death: Observable<any>;
+    deaths: Observable<any>;
 
     constructor(private router: Router, private api: ApiService) { }
 
     ngOnInit() {
-        this.death = this.api.getDeaths();
-        this.death.subscribe(data => {
+        this.deaths = this.api.getDeaths();
+        this.deaths.subscribe(data => {
             console.log('my data', data);
-        });
+            });
     }
-
-    openDetails(death) {
-        let deathId = death.deathId;        
-        this.router.navigateByUrl('/tabs/death/${deathId}');
+    openDetails(deaths) {
+        let deathCount = deaths.deathCount;        
+        this.router.navigateByUrl(`/tabs/deaths/${deathCount}`);
     }
 }
 

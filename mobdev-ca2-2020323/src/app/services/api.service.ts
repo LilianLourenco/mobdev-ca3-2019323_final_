@@ -32,7 +32,11 @@ getEpisodes() {
     }
 
     getDeaths() {
-        return this.http.get('https://www.breakingbadapi.com/api/death-count');
+        return this.http.get('https://www.breakingbadapi.com/api/deaths');
+    }
+
+    getDeath(id) {
+        return this.http.get(`https://www.breakingbadapi.com/api/deaths/${id}`);
     }
 
 }

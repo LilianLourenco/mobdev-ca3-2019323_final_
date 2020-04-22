@@ -1,0 +1,24 @@
+<ion-header>
+	<ion-toolbar color="primary">
+		<ion-buttons slot="start">
+			<ion-back-button defaulthref="/tabs/quotes"></ion-back-button>
+		</ion-buttons>
+		<ion-title>Quotes Details</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+	<ion-card *ngIf="Death Details">
+		<ion-card-content>
+			<h3>Death: {{ deaths.death }} </h3>
+		</ion-card-content>
+	</ion-card>
+
+	<ion-card *ngIf="Death">
+		<ion-card-content>
+			<h3>number of deaths: {{ deaths.number_of_deaths }} </h3>
+		</ion-card-content>
+	</ion-card>
+
+</ion-content>

@@ -1,5 +1,5 @@
 <ion-header>
-	<ion-toolbar color="primary">
+	<ion-toolbar color="dark">
 		<ion-buttons slot="start">
 			<ion-back-button defaulthref="/tabs/deaths"></ion-back-button>
 		</ion-buttons>
@@ -11,16 +11,34 @@
 
 	<ion-card *ngIf="death">
 
-		<!-- <h3><strong>Death Count:</strong></h3>
-		<ion-list style='margin-left: 80px;' *ngFor="let deaths.number_of_deaths">
-			{{ deaths }}
-		</ion-list> -->
-
 		<ion-card-content>
-			<h3><strong>Death Count: {{ death.number_of_deaths}}, {{ death.death}} </strong></h3>
-		</ion-card-content> 
+			<h3>Death Count: {{ death.number_of_deaths}} </h3>
+		</ion-card-content>
+	</ion-card>
 
+	<ion-card *ngIf="death">
+		<ion-card-content>
+			<h3>Death Deceased: {{ death.death}} </h3>
+		</ion-card-content>
+	</ion-card>
+
+	<ion-card *ngIf="death">
+		<ion-card-content>
+			<h3>Death Cause: {{ death.cause}} </h3>
+		</ion-card-content>
+	</ion-card>
+
+
+	<ion-card *ngIf="death">
+		<ion-card-content>
+			<h3>Death season: {{ death.season}} </h3>
+		</ion-card-content>
+	</ion-card>
+
+	<ion-card *ngIf="death">
+		<ion-card-content>
+			<h3>Death Episode: {{ death.episode}} </h3>
+		</ion-card-content>
 	</ion-card>
 
 </ion-content>
-

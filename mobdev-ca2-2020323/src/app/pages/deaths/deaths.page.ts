@@ -21,8 +21,8 @@ export class DeathsPage implements OnInit {
             });
     }
     openDetails(deaths) {
-        let deathCount = deaths.deathCount;        
-        this.router.navigateByUrl(`/tabs/deaths/${deathCount}`);
+        let death = deaths.death;        
+        this.router.navigateByUrl('/tabs/deaths/${death}');
     }
 }
 

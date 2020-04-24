@@ -1,4 +1,3 @@
-
 import { FavouriteService } from '../../services/favourite.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
@@ -23,7 +22,6 @@ export class DeathsDetailsPage implements OnInit {
     this.api.getDeath(this.deathCount).subscribe(res => {
       this.death = res[0];
     });
-
 
   }
 

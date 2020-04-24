@@ -10,7 +10,7 @@
 	<ion-card>
 		<ion-item button detail lines="inset" *ngFor="let death of deaths | async"
          (click)="openDetails(deaths)">
-		  {{ death.responsible }}
+		  {{ death.death }}
 		</ion-item>
 	</ion-card>
 

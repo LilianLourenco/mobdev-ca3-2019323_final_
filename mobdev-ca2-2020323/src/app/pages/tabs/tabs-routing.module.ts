@@ -51,7 +51,12 @@ const routes: Routes = [
                     {
                         path: '',
                         loadChildren: () => import('../deaths/deaths.module').then(m => m.DeathsPageModule)
+                    },
+                    {
+                        path: ':id',
+                        loadChildren: () => import('../deaths-details/deaths-details.module').then(m => m.DeathsDetailsPageModule)
                     }
+
                 ]
             }
         ]

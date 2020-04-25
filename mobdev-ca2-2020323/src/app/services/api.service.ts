@@ -1,4 +1,3 @@
-
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
@@ -31,6 +30,10 @@ export class ApiService {
 
     getQuote(id) {
         return this.http.get(`https://www.breakingbadapi.com/api/quotes/${id}`);
+    }
+
+    searchQuote(text) {
+        return this.http.get(`https://www.breakingbadapi.com/api/quote?author=${text}`);
     }
 
     getDeaths() {

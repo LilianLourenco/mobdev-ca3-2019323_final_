@@ -28,7 +28,7 @@
   --ion-color-tertiary-tint: #6370ff;
 
   /** success **/
-  --ion-color-success: #2dd36f;
+  --ion-color-success: #275c3c;
   --ion-color-success-rgb: 45, 211, 111;
   --ion-color-success-contrast: #ffffff;
   --ion-color-success-contrast-rgb: 255, 255, 255;
@@ -109,7 +109,7 @@
     --ion-color-success-contrast: #000000;
     --ion-color-success-contrast-rgb: 0,0,0;
     --ion-color-success-shade: #29c467;
-    --ion-color-success-tint: #44e283;
+    --ion-color-success-tint: #78d49d;
 
     --ion-color-warning: #ffd534;
     --ion-color-warning-rgb: 255,213,52;
@@ -118,7 +118,7 @@
     --ion-color-warning-shade: #e0bb2e;
     --ion-color-warning-tint: #ffd948;
 
-    --ion-color-danger: #ff4961;
+    --ion-color-danger: #921a2a;
     --ion-color-danger-rgb: 255,73,97;
     --ion-color-danger-contrast: #ffffff;
     --ion-color-danger-contrast-rgb: 255,255,255;
@@ -229,4 +229,28 @@
   ion-title.title-large {
     --color: white;
   }
+
+    ion-tab-button {
+    --color-selected: var(--ion-color-secondary);
+  }
+ 
+  ion-card {
+    --color: #fff;
+  }
+
+  ion-item {
+    --border-color: var(--ion-color-light);
+    --detail-push-color: var(--ion-color-light);
+  }
+  ion-content{
+            
+        --background: url('../assets/img/breakingBad.jpg');
+            background-repeat: no-repeat;
+            background-position: center ;
+            background-size: contain;
+     
+        
+     
+    }
+
 }

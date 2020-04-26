@@ -1,9 +1,6 @@
-page-episode{
-
-        .bg-image{
-            background-image: url('/assets/img/breakingBad.jpg');
-            background-repeat: no-repeat;
-            background-position: center ;
-            background-size: contain;
-        } 
-    }
+ion-content{
+            
+        --background:linear-grading #78d49d 0%, #ffffff;
+        --font-family: 'Times New Roman', Times, serif;
+        
+        }

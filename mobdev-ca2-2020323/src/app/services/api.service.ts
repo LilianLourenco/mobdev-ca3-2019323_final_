@@ -43,7 +43,7 @@ export class ApiService {
         return this.http.get('https://www.breakingbadapi.com/api/deaths');
     }
     searchDeath(text) {
-        return this.http.get(`https://www.breakingbadapi.com/api/q?author=${text}`);
+        return this.http.get(`https://www.breakingbadapi.com/api/death-count?name=${text}`);
     }
 
 }

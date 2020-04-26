@@ -1,16 +1,16 @@
 <ion-header>
 
 
-	<ion-toolbar color="dark">
+	<ion-toolbar color="success">
 		<ion-title>Episodes</ion-title>
-     
+          <ion-icon name="star" slot="icon-only" color="secondary"></ion-icon>
 	</ion-toolbar>
 </ion-header>
 
-<ion-content padding class="bg-image">
+<ion-content >
  
 	<ion-list>
-		<ion-item button detail lines="inset" *ngFor="let episode of episodes | async" (click)="openDetails(episode)">
+		<ion-item button detail lines="inset" *ngFor="let episode of episodes | async" (click)="openDetails(episode)"class="movie-card">
 			{{ episode.title }}
 		</ion-item>
 	</ion-list>

@@ -1,5 +1,5 @@
 <ion-header>
-	<ion-toolbar color="dark">
+	<ion-toolbar color="success">
 		<ion-title>Deaths</ion-title>
 	</ion-toolbar>
 </ion-header>
@@ -9,6 +9,7 @@
 		<ion-searchbar [(ngModel)]="text" (ionChange)="filterList($event)"></ion-searchbar>
 		<ion-item button detail lines="inset" *ngFor="let death of deaths | async" (click)="openDetails(deaths)">
 			{{ death.death }}
+            {{death.number_of_deaths}}
 		</ion-item>
 	</ion-list>
 

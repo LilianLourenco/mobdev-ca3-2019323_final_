@@ -5,15 +5,11 @@
 </ion-header>
 
 <ion-content>
-	<ion-searchbar [(ngModel)]="terms"></ion-searchbar>
-
-	<ion-card>
-		<ion-item button detail lines="inset" *ngFor="let death of deaths | async"
-         (click)="openDetails(deaths)">
-		  {{ death.death }}
+	<ion-list>
+		<ion-searchbar [(ngModel)]="text" (ionChange)="filterList($event)"></ion-searchbar>
+		<ion-item button detail lines="inset" *ngFor="let death of deaths | async" (click)="openDetails(deaths)">
+			{{ death.death }}
 		</ion-item>
-	</ion-card>
+	</ion-list>
 
 </ion-content>
-
-

@@ -27,7 +27,7 @@ export class QuotesPage implements OnInit {
         this.router.navigateByUrl(`/tabs/quotes/${quoteId}`);
     }
 
-    filterList(event){
+    filterList(event){//The function search is not working
         this.quotes = this.api.searchQuote(this.text);
     }
 }

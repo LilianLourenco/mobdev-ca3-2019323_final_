@@ -58,7 +58,23 @@ const routes: Routes = [
                     }
 
                 ]
-            }
+            },
+
+
+
+            {
+                path: 'camera',
+                children: [
+                    {
+                        path: '',
+                        loadChildren: () => import('../camera/camera.module').then(m => m.CameraPageModule)
+                    },
+               
+                ]
+            },
+
+
+            
         ]
     },
     {
